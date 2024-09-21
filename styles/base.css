@@ -60,6 +60,10 @@ main {
   margin: 1rem 1.5rem 1rem 1rem;
 }
 
+#flag {
+  width: 200px;
+}
+
 #secondBlock p {
   margin: 1rem 1rem 1rem 1rem;
   line-height: 1.5;
