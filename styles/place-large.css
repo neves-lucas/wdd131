@@ -61,6 +61,10 @@
       width: 30px;
       margin-left: 15px;
   }
+  .weather img {
+    width: 30%;
+    margin-left: 100px;
+  }
 
   .data-group {
       display: grid;
