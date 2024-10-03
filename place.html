@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - Lucas Neves Rocha</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Lucas Neves Rocha - Place Page">
+  <meta name="author" content="Lucas Neves Rocha">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="scripts/place.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+      <h1>Brazil</h1>
+    </header>
+
+    <main>
+      <div class="hero">
+          <picture>
+              <source srcset="images/brazil-large.webp" media="(min-width: 800px)">
+              <source srcset="images/brazil.webp" media="(max-width: 600px)">
+              <img src="images/brazil-large.webp" alt="Stockholm City" width="500" height="250">
+          </picture>
+          <aside class="data">
+              <h2>Data</h2>
+              <div>
+                  <div class="dataPiece">
+                      <label for="area">Area:</label>
+                      <span id="area">8.510.000 sq km</span>
+                  </div>
+                  <div class="dataPiece">
+                      <label for="population">Population:</label>
+                      <span id="population">212,600,000</span>
+                  </div>
+                  <div class="dataPiece">
+                      <label for="capital">Capital:</label>
+                      <span id="capital">São Paulo</span>
+                  </div>
+                  <div class="dataPiece">
+                      <label for="languages">Languages:</label>
+                      <span id="languages">Portuguese, Spanish, English</span>
+                  </div>
+                  <div class="dataPiece">
+                      <label for="currency">Currency:</label>
+                      <span id="currency">Brazilian Real (BRL)</span>
+                  </div>
+                  <div class="dataPiece">
+                      <label for="time-zone">Time Zone:</label>
+                      <span id="time-zone"> UTC -3</span>
+                  </div>
+                  <div class="dataPiece">
+                      <label for="calling-code">Calling Code:</label>
+                      <span id="calling-code">+55</span>
+                  </div>
+                  <div class="dataPiece">
+                      <label for="internet">Internet TLD:</label>
+                      <span id="internet">.br</span>
+                  </div>                   
+              </div>
+          </aside>
+          <aside class="weather">
+              <h2>Weather</h2>
+              <div>
+                  <div class="weatherData">
+                      <label for="temperatre">Temperature:</label>
+                      <span id="temperature">30 ⁰C</span>
+                  </div>
+                  <div class="weatherData">
+                      <label for="condition">Condition:</label>
+                      <span id="conditiion">Sunny</span>
+                  </div>
+                  <div class="weatherData">
+                      <label for="wind">Wind:</label>
+                      <span id="wind">11 km/h</span>
+                  </div>
+                  <div class="weatherData">
+                      <label for="Wind-chill">Wind Chill:</label>
+                      <span id="wind-chill"></span>
+                  </div>
+              </div>
+          </aside>
+      </div>
+  </main>
+
+    <footer>
+      <p>&#169; <span id="currentYear"></span> 🔥Lucas Neves Rocha🔥 Brazil</p>
+      <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
