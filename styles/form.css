@@ -1,0 +1,15 @@
+footer { 
+  justify-content: space-around;
+  background-color: #174E70;
+  color: white;
+  border-top: 1px solid #333333;
+  margin-top: 2rem;
+  font-size: 18px;
+  padding: 30px;
+}
+
+
+footer p {
+  text-align: center;
+  margin-top: 2rem;
+}
