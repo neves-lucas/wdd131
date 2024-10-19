@@ -75,14 +75,14 @@ label {
   border-radius: 5px;
 }
 
-#featuresDiv {
+#featDiv {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin:30px 0 30px -90px;
 }
 
-#featuresDiv label {
+#featDiv label {
   margin-left: -90px;
 }
 
