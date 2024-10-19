@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: poppins;
 }
 
 body {
@@ -93,6 +94,7 @@ label {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 #visit {
