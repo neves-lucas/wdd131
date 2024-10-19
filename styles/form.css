@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -75,14 +74,14 @@ label {
   border-radius: 5px;
 }
 
-#features {
+#featuresDiv {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin:30px 0 30px -90px;
 }
 
-#features label {
+#featuresDiv label {
   margin-left: -90px;
 }
 
@@ -105,6 +104,7 @@ label {
   border-radius: 10px;
   text-align: center;
   font-size: 1rem;
+  max-width: 600px;
 }
 
 #visitCount {
