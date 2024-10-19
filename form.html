@@ -3,12 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/form.css">
   <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/form.js" defer></script>
   <title>Document</title>
 </head>
 <body>
-  
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <form action="/submit" method="post">
+    <label for="productName">Product Name</label>
+    <select type="text" id="productName" name="productName" required>
+      <option value="" disabled selected>Select a product...</option>
+    </select>
+
+    <label>Overall Rating</label>
+    <div class="stars">
+      <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+      <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+      <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+      <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+      <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+    </div>
+
+    <label for="installation">Date of installation</label>
+    <input type="date" id="installation" name="installation" required>
+
+    <label for="features">Which features did you find useful in the product? (Check all that apply)</label>
+    <div id="features">
+      <input type="checkbox" id="durability" name="durability" value="1">
+      <label for="durability">Durability</label>
+      <input type="checkbox" id="easeOfUse" name="easeOfUse" value="2">
+      <label for="easeOfUse">Ease of use</label>
+      <input type="checkbox" id="performance" name="performance" value="3">
+      <label for="performance">Performance</label>
+      <input type="checkbox" id="design" name="design" value="4">
+      <label for="design">Design</label>
+    </div>
+    
+    <label for="review">Written Review (Optional)</label>
+    <textarea id="review" name="review"></textarea>
+
+    <label for="name">Your Name (Optional)</label>
+    <input type="text" id="name" name="name">
+
+    <input type="submit" id="submitButton" value="Post Review">
+  </form>
+
+  <div id="visit">
+    <p>Number of visits to this page</p>
+    <p id="visitCount"></p>
+  </div>
 
   <footer>
     <p>&#169; <span id="currentYear"></span> 🔥Lucas Neves Rocha🔥 Brazil</p>
